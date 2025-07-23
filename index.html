@@ -8,13 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w-[1440px] mx-auto">
-    <header>
-        <navbar class="flex justify-between items-center justify-center px-[150px] pt-[30px] pb-[120px]">
+
+    <!-------------------- Header Area ----------------------->
+
+    <header class="px-[150px]">
+        <navbar class="flex justify-between items-center justify-center pt-[30px] pb-[120px]">
             <div class="logo">
                 <img src="images/logo.png" alt="">
             </div>
             <div class="menu">
-                <ul class="flex gap-12 font-[font-family: "Inter", sans-serif]">
+                <ul class="flex gap-12 inter-sans-serif">
                     <li><a class="text-[16px] font-bold text-[#252432]" href="#">Home</a></li>
                     <li><a class="text-[rgb(137, 135, 161)] font-normal text-[16px]" href="#">Shop</a></li>
                     <li><a class="text-[rgb(137, 135, 161)] font-normal text-[16px]" href="#">About us</a></li>
@@ -26,5 +29,25 @@
             </div>
         </navbar>
     </header>
+
+    <!----------------------- Banner Area -------------------------->
+
+    <section class="px-[150px]">
+        <div class="banner flex justify-between items-center gap-10">
+          <div class="banner-content w-1/2">
+
+            <h1 class="text-[65px] font-bold f-noto-serif">
+              ALWAYS <span class="text-pink-500 inline">FRESH<br>FLOWERS</span>
+            </h1>
+
+            <p class="mt-4 text-[rgba(0, 0, 0, 0.5)] inter-sans-serif text-[22px] font-normal">
+              Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+      
+          <div class="w-1/2 h-[355px] bg-cover bg-center border border-dashed border-[#e3e4ed] bg-[url('images/hero-flower.png')]"></div>
+        </div>
+      </section>
+
 </body>
 </html>
