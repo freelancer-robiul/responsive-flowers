@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>responsive-flowers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="max-w-[1440px] mx-auto">
+    <header>
+        <navbar class="flex justify-between items-center justify-center px-[150px] pt-[30px] pb-[120px]">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="flex gap-12 font-[font-family: "Inter", sans-serif]">
+                    <li><a class="text-[16px] font-bold text-[#252432]" href="#">Home</a></li>
+                    <li><a class="text-[rgb(137, 135, 161)] font-normal text-[16px]" href="#">Shop</a></li>
+                    <li><a class="text-[rgb(137, 135, 161)] font-normal text-[16px]" href="#">About us</a></li>
+                    <li><a href="#">
+                        <img class="inline-block mr-[12px]" src="images/shopping-cart.png" alt="">
+                        <span class="text-[16px] font-normal text-[#000000]">Cart ($56)</span>
+                    </a></li>
+                </ul>
+            </div>
+        </navbar>
+    </header>
 </body>
 </html>
