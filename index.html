@@ -11,65 +11,76 @@
 
     <!-------------------- Header Area ----------------------->
 
-    <header class="px-[150px]">
-        <navbar class="flex justify-between items-center justify-center pt-[30px] pb-[120px]">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="menu">
-                <ul class="flex gap-12 inter-sans-serif">
+    <header class="sm:px-[20px] lg:px-[150px]">
+
+        <nav class="px-4 pt-[30px] pb-[60px] lg:pb-[120px]">
+           
+            <div class="lg:flex sm:flex-row lg:justify-between lg:items-center sm:flex sm:justify-between sm:items-center">          
+            
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>          
+                
+                <div class="flex items-center gap-6">
+            
+                    <!-- Main menu (Only for large screen) -->
+                    <ul class="hidden lg:flex gap-12 inter-sans-serif">
                     <li><a class="text-[16px] font-bold text-[#252432]" href="#">Home</a></li>
                     <li><a class="text-[#6B7280] font-normal text-[16px]" href="#">Shop</a></li>
                     <li><a class="text-[#6B7280] font-normal text-[16px]" href="#">About us</a></li>
-
-                    <li><a class="text-[#000000]" href="#">
-
-                        <img class="inline-block mr-3" src="images/shopping-cart.png" alt="">
-                        
-                        <span><a class="text-[16px] font-medium" href="#">Cart ($56)</a></span>
-                    </a></li>
-                </ul>
+                    </ul>
+            
+                    <!-- Cart (Always visible) -->
+                    <a class="flex items-center text-[#000000]" href="#">
+                    <img class="inline-block mr-3" src="images/shopping-cart.png" alt="">
+                    <span class="text-[16px] font-medium">Cart ($56)</span>
+                    </a>
+            
+                </div>
             </div>
-        </navbar>
+          </nav>
+        
     </header>
  
     
     <!----------------------- Banner Area -------------------------->
 
-    <section class="px-[150px]">
-        <div class="banner flex justify-between items-center gap-10">
-            <div class="banner-content w-1/2">
-
-                <h1 class="text-[65px] font-bold f-noto-serif">
-                ALWAYS <span class="text-pink-500 inline">FRESH<br>FLOWERS</span>
-                </h1>
-
-                <p class="mt-4 text-[#6B7280] inter-sans-serif text-[22px] font-normal">
-                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
-                </p>
-            </div>
+    <section class="sm:px-[20px] lg:px-[150px]">
+        <div class="banner flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
       
-          <div class="w-1/2 h-[355px] bg-cover bg-center border border-dashed border-gray-400 bg-[url('images/hero-flower.png')]"></div>
+          <!-- Content: small device a niche, large device a bam -->
+          <div class="w-full lg:w-1/2">
+            <h1 class="text-[24px] lg:text-[65px] font-bold f-noto-serif">
+              ALWAYS <span class="text-pink-500 inline">FRESH<br>FLOWERS</span>
+            </h1>
+            <p class="mt-4 text-[#6B7280] inter-sans-serif text-[14px] lg:text-[22px] font-normal">
+              Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+      
+          <!-- Image: small device a upore, large device a dane -->
+          <div class="w-full lg:w-1/2 h-[355px] bg-cover bg-center border border-dashed border-gray-400 bg-[url('images/hero-flower.png')]"></div>
+      
         </div>
       </section>
 
       <!----------------------- Our Plants Area --------------------->
 
-      <section class="our-plants px-[150px] mt-[120px] mb-[210px]">
-        <div class="plants-content text-center px-[126px]">
+      <section class="our-plants px-[10px] lg:px-[150px] mt-[65px] lg:mt-[120px] mb-[100px] lg:mb-[210px]">
+        <div class="plants-content text-center px-[28px] lg:px-[126px]">
 
-            <h1 class="f-noto-serif text-[50px] font-bold mb-[16px]"><span class="text-red-500 inline">Our</span> Plants</h1>
+            <h1 class="f-noto-serif text-[24px] lg:text-[50px] font-bold mb-[16px]"><span class="text-red-500 inline">Our</span> Plants</h1>
 
-            <p class="inter-sans-serif text-[22px] font-normal text-[#6B7280] mb-[49px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <p class="inter-sans-serif text-[14px] lg:text-[22px] font-normal text-[#6B7280] mb-[28px] lg:mb-[49px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </div>
-        <div class="plants-card grid grid-cols-4 gap-[30px]">
+        <div class="plants-card grid grid-cols-2 lg:grid-cols-4 gap-[20px] lg:gap-[30px]">
             
             <div class="single-card inter-sans-serif">
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -80,8 +91,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -92,8 +103,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -104,8 +115,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -116,8 +127,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -128,8 +139,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -140,8 +151,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full
@@ -152,8 +163,8 @@
                 <img src="images/sample-flower-image.png" alt="">
                 
                 <div class="card-content text-center my-[15px]">
-                    <p class="text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
-                    <p class="font-bold text-[22px]">20 usd</p>
+                    <p class="text-[16px] lg:text-[22px] font-medium text-[#6B7280]">Lily Blossom</p>
+                    <p class="font-bold text-[16px] lg:text-[22px]">20 usd</p>
                 </div>
 
                 <button class="bg-[#E95A08] w-full

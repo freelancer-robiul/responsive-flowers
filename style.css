@@ -9,3 +9,7 @@
   .inter-sans-serif{
     font-family: "Inter", sans-serif;
   }
+
+  .single-card img{
+    width: 100%;
+  }
